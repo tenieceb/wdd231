@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #2F3E46;
+    --secondary-color: #52796F;
+    --accent1-color: #CAD2C5;
+    --accent2-color: #354F52;
+    --accent3-color:  #84A98C;
+    --main-font: "Lexend Deca";
+
+    --nav-link-color: white;
+    --nav-hover-link-color:#354F52;
+    --nav-hover-background-color: rgba(255, 255, 255, 0.597);
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--accent1-color);
+}
+
+h1, h2,h3{
+    font-family: var(--main-font);
+    color:var(--primary-color);
+}
+
+header {
+    position:relative;
+    width: 100% ;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px;
+    background-color: var(--secondary-color);
+}
+
+#profile{
+    justify-self: center;
+    box-shadow: 8px 8px 10px var(--primary-color);
+    margin: 7px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: #2F3E46 2px 2px 2px;
+}
+
+h2, h3, p {
+    text-align: center;
+}
+
+.mainnav a{
+    display: flex;
+    flex-direction: column;
+    color: var(--nav-link-color);
+    text-decoration:none;
+    padding: 1rem;
+    text-align: center; 
+}
+
+.mainnav ul{
+	list-style-type: none;
+}
+
+a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+main {
+    margin: 1rem auto;
+}
+
+#courses-container{
+    display:grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    font-family: var(--main-font);
+    color:var(--accent1-color);
+    padding: 5px;
+}
+
+#menu{
+    align-self: center;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight:bold;
+    padding: 5px;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+#menu::before{
+    content:"≡";
+}
+
+.mainnav a{
+    display:none;
+}
+.show a{
+    display:flex;
+    align-items: flex-end;
+}
+
+#menu.show::before{
+    content:"X";
+}
+
+img {
+    justify-self: center;
+    box-shadow: 8px 8px 10px var(--accent3-color);
+    margin: 7px;
+}
+
+.course-card {
+    border: var(--primary-color) 3px solid;
+    box-shadow: 8px 8px 8px  hwb(9 74% 8% / 0.669);
+    ;
+}

@@ -2,12 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width="device-width", initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Teniece Busenbark">
+    <meta name="description" content="This is the WWD231 Course Home Page for Teniece Busenbark.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <script src="scripts/main.js" defer ></script>
+    <script src="scripts/courses.js" defer ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <title>WDD231|Home Page</title>
 </head>
 <body>
-    <p>Place holder home page
-        
-    </p>
+  <header>
+      <img src="images/profile.webp" alt="Teniece Busenbark" id="profile">
+    <span id="name">Teniece Busenbark</span>
+    <a id='menu' href='#'></a>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/teniece-b-a75121161/">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <section id="course-work">
+      <h2>Course Work</h2>
+    </section>
+    <section id="uintah-basin">
+      <h2>Uintah Basin, Utah</h2>
+      <figure id="high-uintas">
+        <img src="images/High_Uintas_Near_Utah-Wyoming_Border.jpg" alt="High Uintas Near Utah-Wyoming Border" id="ub">
+      <figcaption>
+        Photo by Ken Lund from Reno, Nevada, USA - "High Uintas Near Utah-Wyoming Border", licensed under CC BY-SA 2.0. 
+        <a href="https://commons.wikimedia.org/w/index.php?curid=46950031" target="_blank" rel="noopener noreferrer">View License</a>
+      </figcaption>
+      </figure>
+    </section>
+    <section id="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <nav id="courses-nav">
+        <ul>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">CSE</a></li>
+          <li><a href="#">WDD</a></li>
+        </ul>
+      </nav>
+      <div id="courses-container">
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>© <span id="currentyear"></span> | Teniece Busenbark | Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+    
 </body>
 </html>
