@@ -1,3 +1,16 @@
+let coursesNav = document.querySelector('#courses-nav');
+
+coursesNav.addEventListener('click', function (e) {
+  if (e.target.tagName === 'A') {
+    e.preventDefault();
+    const filterType = e.target.id; 
+    getFilter(filterType);
+    coursesNav.querySelectorAll('a').forEach(link => link.classList.remove('active'));
+    e.target.classList.add('active');
+  }
+});
+
+
 const courses = [
     {
         subject: 'CSE',
@@ -77,3 +90,43 @@ const courses = [
         completed: false
     }
 ]
+
+createCoursesCards(courses);
+
+function getFilter(id){
+  if (id == "all")
+  {
+      createCoursesCards(courses);
+
+  }
+  else if (id == "cse")
+  {
+      let cseCourses = courses.filter(course => course.subject == "CSE");
+      createCoursesCards(cseCourses);
+
+  }
+  else if (id == "wdd")
+  {
+      let wddCourses = courses.filter(course => course.subject == "WDD");
+      createCoursesCards(wddCourses);
+  }}
+
+
+
+function createCoursesCards (filteredCourses){
+  document.querySelector("#courses-container").innerHTML = ``;
+  filteredCourses.forEach((course) => {
+    const courseContainer = document.getElementById('courses-container');
+    const courseCard = document.createElement("div");
+    courseCard.className = `course-card`;
+
+    if (course.completed) {
+        courseCard.classList.add('completed');
+    }
+    courseCard.innerHTML = `
+          <h3>${course.subject} ${course.number}</h3>
+
+    `;
+
+  courseContainer.appendChild(courseCard);
+ })};
