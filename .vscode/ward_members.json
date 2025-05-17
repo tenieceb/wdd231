@@ -1,13 +1,4 @@
-family name
-the date the family moved into the ward
-the number of people in the family (number of records)
-if visited by bishopric?
-individual family member data
- -name
--gender
-- birthdate
-
-"ward_members": [
+[
     {
         "family_name": "Smith",
         "move_in_date": "2022-01-15",
