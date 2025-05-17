@@ -1,0 +1,39 @@
+family name
+the date the family moved into the ward
+the number of people in the family (number of records)
+if visited by bishopric?
+individual family member data
+ -name
+-gender
+- birthdate
+
+"ward_members": [
+    {
+        "family_name": "Smith",
+        "move_in_date": "2022-01-15",
+        "number_of_people": 4,
+        "visited_by_bishopric": true,
+        "members": [
+            {
+                "name": "John Smith",
+                "gender": "male",
+                "birthdate": "1985-06-20"
+            },
+            {
+                "name": "Jane Smith",
+                "gender": "female",
+                "birthdate": "1987-03-15"
+            },
+            {
+                "name": "Emily Smith",
+                "gender": "female",
+                "birthdate": "2010-11-05"
+            },
+            {
+                "name": "Michael Smith",
+                "gender": "male",
+                "birthdate": "2012-08-22"
+            }
+        ]
+    }
+]
