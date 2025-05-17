@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #2F3E46;
+    --secondary-color: #52796F;
+    --accent1-color: #CAD2C5;
+    --accent2-color: #354F52;
+    --accent3-color:  #84A98C;
+    --main-font: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    text-align:center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
