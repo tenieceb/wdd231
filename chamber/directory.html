@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Teniece Busenbark">
     <meta name="description" content="Chamber of Commerce Directory">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
     <script src="scripts/main.js" defer ></script>
+    <script src="scripts/members.js" defer ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="images/chamber.ico">
@@ -18,10 +21,49 @@
     <meta property="og:url" content="https://tenieceb.github.io/wdd231/chamber/directory.html">
 </head>
 <body>
-  <header></header>
-  <main></main>
+  <header>
+    <section id="heading">
+        <img src="images/logo.png" alt="Asheville Chamber of Commerce Logo" id="logo">
+        <h1> Asheville</h1>
+        <h2> Chamber of Commerce </h2>
+    </section>
+    <a id='menu' href='#'></a>
+    <nav class="mainnav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+  </header>
+    <main>
+        <h2>Directory</h2>
+        <nav class="business-view">
+            <a id="card-view" href="#"><img src="images/grid-view.webp" alt="grid-vew"> </a>
+            <a id="list-view" href="#"><img src="images/list-view.png" alt="list-view"> </a>
+        </nav>
+        <div id="business-cards"></div>
+    </main>
   <footer>
-    <p>© <!--insert year here -->| Teniece Busenbark | Utah, USA</p>
+    <section id="contact">
+        <h3> Asheville Chamber of Commerce </h3>
+        <p> 123 Main St, Asheville, NC 28801 </p>
+        <p> Email: <a href="info@ashevillenc.org">info@ashevillenc.org</a></p>
+        <p> Phone: (123) 456-7890 </p>
+    </section>
+    <section id="social">
+        <ul>
+            <li><a href="https://www.facebook.com/AshevilleChamber" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/AshevilleChamber" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/ashevillechamber/" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+    <section id="author">
+        <h3>WDD231 Class Project</h3>
+        <p>Teniece Busenbark</p>
+        <p>© <span id="currentyear"></span> Asheville Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </section>
   </footer>
     
 </body>
