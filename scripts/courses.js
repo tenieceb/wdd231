@@ -1,4 +1,5 @@
 let coursesNav = document.querySelector('#courses-nav');
+let courseCredit = document.querySelector('#course-credit');
 
 coursesNav.addEventListener('click', function (e) {
   if (e.target.tagName === 'A') {
@@ -92,22 +93,29 @@ const courses = [
 ]
 
 createCoursesCards(courses);
+courseCredit.innerHTML =" The total number of credits for the courses listed below is "+ courses.reduce((acc, course) => acc + course.credits, 0);
 
 function getFilter(id){
   if (id == "all")
   {
-      createCoursesCards(courses);
+      let allCourses = courses.filter(course => course.subject == "CSE" || course.subject == "WDD");
+      courseCredit.innerHTML =" The total number of credits for the courses listed below is "+ courses.reduce((acc, course) => acc + course.credits, 0);
+      createCoursesCards(allCourses);
 
   }
   else if (id == "cse")
   {
       let cseCourses = courses.filter(course => course.subject == "CSE");
+      courseCredit.innerHTML =" The total number of credits for the courses listed below is "+ cseCourses.reduce((acc, course) => acc + course.credits, 0);
+
       createCoursesCards(cseCourses);
 
   }
   else if (id == "wdd")
   {
       let wddCourses = courses.filter(course => course.subject == "WDD");
+      courseCredit.innerHTML =" The total number of credits for the courses listed below is "+ wddCourses.reduce((acc, course) => acc + course.credits, 0);
+
       createCoursesCards(wddCourses);
   }}
 
@@ -129,4 +137,8 @@ function createCoursesCards (filteredCourses){
     `;
 
   courseContainer.appendChild(courseCard);
- })};
+ })
+ 
+
+
+};
