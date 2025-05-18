@@ -16,7 +16,46 @@ h1 {
     text-align:center;
 }
 
-main{
+#cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
+}
+
+section{
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow:var(--primary-color) 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;   
+}
+
+img {
+	width: auto;
+	max-width: 300px;
+	box-shadow: 0 0 30px var(--primary-color);
+	height: 300px;
+	border: 1px solid var(--accent2-color);
+    margin-top: 2.5rem;
+}
+
+h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 3px;
+}
+
+p {
+    color: var(--accent2-color);
+    text-align: center;
+    margin: 3px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
 }
