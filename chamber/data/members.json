@@ -2,56 +2,56 @@
 {
     "name": "News Today",
     "address": "123 Main St,Asheville, NC 28801",
-    "phone": "555-1234",
+    "number": "555-1234",
     "website": "http://newstoday.com",
-    "image": "https://example.com/johndoe.jpg",
+    "image": "images/news-today.png",
     "membership": 1
 },
 {
     "name": "Dipping Apples",
     "address": "456 Elm St, Asheville, NC 28801",
-    "phone": "555-5678",
+    "number": "555-5678",
     "website": "http://dippingapples.com",
-    "image": "https://example.com/janesmith.jpg",
+    "image": "images/dipping-apples.png",
     "membership": 1
 },
 {
     "name": "Art Corner",
     "address": "789 Oak St, Asheville, NC 28801",
-    "phone": "555-8765",
+    "number": "555-8765",
     "website": "http://artcorner.com",
-    "image": "https://example.com/bobjohnson.jpg",
+    "image": "images/art-corner.png",
     "membership": 3
 },
 {
     "name": "Freshly Sliced",
     "address": "321 Pine St, Asheville, NC 28801",
-    "phone": "555-4321",
+    "number": "555-4321",
     "website": "http://freshlysliced.com",
-    "image": "https://example.com/alicebrown.jpg",
+    "image": "images/freshly-sliced.png",
     "membership": 3
 },
 {
     "name": "Ashes to Ashes",
     "address": "654 Maple St, Asheville, NC 28801",
-    "phone": "555-6789",
+    "number": "555-6789",
     "website": "http://ashestoashes.com",
-    "image": "https://example.com/charliedavis.jpg",
+    "image": "images/ashes-to-ashes.png",
     "membership": 2
 },
 {
     "name": "Endurance Fitness",
     "address": "987 Cedar St, Asheville, NC 28801",
-    "phone": "555-3456",
+    "number": "555-3456",
     "website": "http://endurancefitness.com",
-    "image": "https://example.com/dianaevans.jpg",
+    "image": "images/endurance-fitness.png",
     "membership": 1
 },
 {
     "name": "Storm Chasers",
     "address": "135 Birch St, Asheville, NC 28801",
-    "phone": "555-7890",
+    "number": "555-7890",
     "website": "http://stormchasers.com",
-    "image": "https://example.com/ethangreen.jpg",
+    "image": "images/storm-chasers.png",
     "membership": 2
 }]
