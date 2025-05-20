@@ -1,5 +1,5 @@
 const url = 'data/members.json';
-const cards = document.querySelector('#business-cards');
+const cards = document.querySelector('.business-cards');
 const gridView = document.querySelector('#grid-view');
 const listView = document.querySelector('#list-view');
 let memberDisplay = 'grid';
@@ -9,6 +9,7 @@ gridView.addEventListener('click', () => {
     memberDisplay = 'grid';
     gridView.classList.add('active');
     listView.classList.remove('active');
+    cards.setAttribute('id', 'grid');
     displayMembers(members, memberDisplay);
 });
 
@@ -16,6 +17,7 @@ listView.addEventListener('click', () => {
     memberDisplay = 'list';
     listView.classList.add('active');
     gridView.classList.remove('active');
+    cards.setAttribute('id', 'list');
     displayMembers(members, memberDisplay);
 });
 
@@ -30,7 +32,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members, display) => {
-    cards.innerHTML = ''; // Clear previous content
+    cards.innerHTML = '';
 
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -38,18 +40,21 @@ const displayMembers = (members, display) => {
         let image = document.createElement('img');
         let address = document.createElement('p');
         let number = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
 
         name.textContent = member.name;
         number.textContent = `Phone: ${member.number}`;
         address.textContent = `Address: ${member.address}`;
-        website.textContent = `Website: ${member.website}`;
+        website.textContent = `${member.website}`;
 
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `${member.name} logo`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
+        image.setAttribute('width', '240');
+        image.setAttribute('height', '150');
+
+        website.setAttribute('href', member.website);
+        website.setAttribute('target', '_blank');
 
         if (display === 'grid') {
             card.classList.add('grid-card');
@@ -63,15 +68,12 @@ const displayMembers = (members, display) => {
         } else if (display === 'list') {
             card.classList.add('list-card');
 
-            let info = document.createElement('div');
-            info.classList.add('info');
-            info.appendChild(name);
-            info.appendChild(address);
-            info.appendChild(number);
-            info.appendChild(website);
+            card.classList.add('list-card');
 
-            card.appendChild(image);
-            card.appendChild(info);
+            card.appendChild(name);
+            card.appendChild(address);
+            card.appendChild(number);
+            card.appendChild(website);
         }
 
         cards.appendChild(card);
