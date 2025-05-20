@@ -19,9 +19,10 @@ body{
     padding: 0
 }
 
-h2,h3, p {
+h2,h3, p, main>h1 {
     font-family: var(--main-font);
     color:var(--color-text);
+    text-align: center;
 }
 
 header {
@@ -87,9 +88,7 @@ header {
 
 
 
-h2, h3, p {
-    text-align: center;
-}
+
 
 .mainnav ul li a{
     display: flex;
