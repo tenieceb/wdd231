@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/main_large.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/main.js" defer ></script>
-    <script src="scripts/current-weather.js" defer ></script>
+    <script src="scripts/weather.js" defer ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="images/chamber.ico">
@@ -18,7 +18,7 @@
     <meta property="og:title" content="Asheville Chamber of Commerce | Home">
     <meta property="og:description" content="This is the home page for the Asheville, North Carolina Chamber of Commerce.">
     <meta property="og:image" content="imageschamber-logo.webp">
-    <meta property="og:url" content="https://tenieceb.github.io/wdd231/chamber">d
+    <meta property="og:url" content="https://tenieceb.github.io/wdd231/chamber">
 </head>
 <body>
   <header>
@@ -59,7 +59,12 @@
             <p>The current temperature is <span id="current-temp"></span></p>
             <figure>
               <img id="weather-icon" src="" alt="">
-              <figcaption></figcaption>
+              <figcaption id="weather-description"></figcaption>
+            </figure>
+            <p>Three Day Forecast</p>
+            <figure>
+              <img id="three-day-forecast-icon" src="" alt="">
+              <figcaption id="three-day-forecast"></figcaption>
             </figure>
 
         </section>
