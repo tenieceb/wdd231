@@ -1,10 +1,11 @@
 [
 {
     "name": "News Today",
-    "address": "123 Main St,Asheville, NC 28801",
+    "address": "5151 Main St,Asheville, NC 28801",
     "number": "555-1234",
     "website": "http://newstoday.com",
     "image": "images/news-today.png",
+    "description": "Your source for the latest news in Asheville and beyond.",
     "membership": 1
 },
 {
@@ -13,6 +14,7 @@
     "number": "555-5678",
     "website": "http://dippingapples.com",
     "image": "images/dipping-apples.png",
+    "description": "A local favorite for fresh, caramel-dipped apples and treats.",
     "membership": 1
 },
 {
@@ -21,6 +23,7 @@
     "number": "555-8765",
     "website": "http://artcorner.com",
     "image": "images/art-corner.png",
+    "description": "Showcasing local artists and their unique creations.",
     "membership": 3
 },
 {
@@ -29,6 +32,7 @@
     "number": "555-4321",
     "website": "http://freshlysliced.com",
     "image": "images/freshly-sliced.png",
+    "description": "Your go-to place for fresh, stone-baked pizza.",
     "membership": 3
 },
 {
@@ -37,6 +41,7 @@
     "number": "555-6789",
     "website": "http://ashestoashes.com",
     "image": "images/ashes-to-ashes.png",
+    "description": "Providing compassionate, dignified cremation services with care and respect.",
     "membership": 2
 },
 {
@@ -45,6 +50,7 @@
     "number": "555-3456",
     "website": "http://endurancefitness.com",
     "image": "images/endurance-fitness.png",
+    "description": "Empowering you to achieve your fitness goals with personalized training.",
     "membership": 1
 },
 {
@@ -53,5 +59,6 @@
     "number": "555-7890",
     "website": "http://stormchasers.com",
     "image": "images/storm-chasers.png",
+    "description": "Tracking extreme weather with cutting-edge tech and real-time field research.",
     "membership": 2
 }]

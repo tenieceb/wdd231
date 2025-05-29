@@ -86,10 +86,6 @@ header {
     padding: 0;
 }
 
-
-
-
-
 .mainnav ul li a{
     display: flex;
     flex-direction: column;
@@ -113,9 +109,65 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+.mainnav.show{
+    display:flex;
+    align-items: flex-end;
+}
+
 main {
     margin: 1rem auto;
 }
+
+.hero-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    width: 100%;
+}
+
+.hero img{
+    margin:0;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 10px var(--nav-background-color);
+}
+
+.hero figure{
+    margin: 0;
+}
+
+/* index spotlight */
+.business-spotlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3;
+    background-color: #f8f9fa88;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* directory business view */
 
 .business-cards, #grid{
     display:grid;
@@ -136,22 +188,48 @@ main {
 #list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Ensures child items align to the left */
-    width: 100%;
+    align-items: flex-start; 
 }
 
 .list-card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Ensures internal content aligns left */
+    align-items: flex-start; 
     padding: 1rem;
     background-color: var(--color-background);
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: none; /* Optional: ensures no artificial centering */
+    max-width: none;
 }
 
 
+img {
+    justify-self: center;
+    box-shadow: 8px 8px 10px var(--accent3-color);
+    margin: 7px;
+}
+
+.business-cards {
+    border: var(--accent3-color) 3px solid;
+    box-shadow: 8px 8px 8px  var(--nav-background-color);
+}
+
+.business-view {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: var(--color-primary);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#grid-view, #list-view{
+    margin: 10px;
+    box-shadow: 1px 1px 1px var(--color-border);
+    background-color: var(--accent3-color);
+}
+
+/* footer */
 footer {
     background-color: var(--color-primary);
     display: flex;
@@ -170,40 +248,4 @@ footer {
 .social img, .business-view img{
     width: 25px;
     box-shadow: none;
-}
-
-
-
-.mainnav.show{
-    display:flex;
-    align-items: flex-end;
-}
-
-
-img {
-    justify-self: center;
-    box-shadow: 8px 8px 10px var(--accent3-color);
-    margin: 7px;
-}
-
-.business-cards {
-    border: var(--accent3-color) 3px solid;
-    box-shadow: 8px 8px 8px  hwb(9 74% 8% / 0.669);
-    
-
-}
-
-.business-view {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    background-color: var(--color-primary);
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-#grid-view, #list-view{
-    margin: 10px;
-    box-shadow: 1px 1px 1px var(--color-border);
-    background-color: var(--accent3-color);
 }
