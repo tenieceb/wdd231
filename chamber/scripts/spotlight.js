@@ -30,13 +30,17 @@ function displaySpotlights(spotlightMembers) {
 
         if (member.membership === 2){
             memberLevel = 'Silver';
+            levelClass = 'silver';
         }
         if (member.membership === 3){
             memberLevel = 'Gold';
+            levelClass = 'gold';
         }
 
         const section = document.createElement('section');
         section.classList.add('spotlight-card');
+
+        section.classList.add(levelClass);
 
         section.innerHTML = `
             <h3>${member.name}</h3>

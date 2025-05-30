@@ -1,0 +1,84 @@
+/* hero image */
+.hero-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    width: 100%;
+}
+
+.hero img{
+    display: relative;
+    margin:0;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 10px var(--nav-background-color);
+}
+
+.hero figure{
+    margin: 0;
+
+}
+
+/* === SPOTLIGHT CONTAINER === */
+.spotlight-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--nav-background-color);
+}
+
+/* === INDIVIDUAL SPOTLIGHT CARD === */
+.spotlight-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  border: 5px solid transparent;
+}
+
+.spotlight-card.gold:hover {
+  border: 5px solid #ffd900a6;
+}
+
+.spotlight-card.silver:hover {
+   border: 5px solid  #c0c0c0fd;
+}
+
+.spotlight-card h3 {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+  margin: 0.5rem 0;
+  color: var(--color-text);
+}
+
+.spotlight-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.spotlight-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #426864;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spotlight-card a:hover {
+  text-decoration: underline;
+}
