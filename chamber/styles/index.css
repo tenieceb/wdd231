@@ -19,7 +19,88 @@
 
 .hero figure{
     margin: 0;
+}
 
+.hero-call-to-action figcaption{
+    color: var(--color-text);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hero-call-to-action a{
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-call-to-action a:hover {
+  text-decoration: underline;
+}
+
+.cta-button {
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    box-shadow: 5px 5px 10px var(--nav-background-color);
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;    
+}
+
+/* section styling */
+main section {
+    padding: 2rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-radius: 12px;
+}
+
+/* weather */
+.weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 900px;
+    margin: auto;
+    background-color:  #2b4d70;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.weather h3{
+    grid-row: 1;
+    grid-column: 1/-1;
+    text-align: center;
+    color: white;
+}
+
+.current-w {
+    grid-column: 1;
+    align-content: center
+}
+
+.forecast {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-w,
+.forecast {
+  background-color: rgba(255, 255, 255, 0.8); /* White, 80% opaque */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+}
+
+
+#three-day-forecast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 /* === SPOTLIGHT CONTAINER === */

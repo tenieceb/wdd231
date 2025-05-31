@@ -22,3 +22,11 @@ hamburgerButton.addEventListener('click',() =>{
     mainNav.classList.toggle('show');
     hamburgerButton.classList.toggle('show');
 })
+
+const todayDate = document.querySelector("#today");
+todayDate.innerHTML = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+});

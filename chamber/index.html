@@ -45,6 +45,7 @@
         <h1>Home</h1>
         <section class="hero-call-to-action">
             <h2>Welcome to Asheville, North Carolina!</h2>
+            <a href="join.html" class="cta-button">Join Us!</a>
             <figure class="hero">
               <img src="images/Hero-Asheville-at-dusk.jpg" alt="Arial image of downtown Asheville, North Carolina at dusk." id="hero-image">
               <figcaption>
@@ -52,20 +53,29 @@
                 <a href="https://commons.wikimedia.org/w/index.php?curid=135866482" target="_blank" rel="noopener">CC0 License</a>.
               </figcaption>
             </figure>
-            <a href="join.html" class="cta-button">Join Us!</a>
+            
         </section>
+
         <section class="currentevents">
-          
+          <h3>Current Events</h3>
+          <p>Today is <span id="today"></span> </p>
+          <p>On June 1st our lovely city will be preparing for summer fun on main street!</p>
         </section>
         <section class="weather">
-            <p>The current temperature is <span id="current-temp"></span></p>
-            <figure>
-              <img id="weather-icon" src="" alt="">
-              <figcaption id="weather-description"></figcaption>
-            </figure>
-            <p>Three Day Forecast</p>
-            <div id="three-day-forecast"></div>
+          <h3>Weather</h3>
+            <div class="current-w">
+                <p>The current temperature is <span id="current-temp"></span></p>
+              <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption id="weather-description"></figcaption>
+              </figure>
+            </div>
+            <div class="forecast">
+              <p>Three Day Forecast</p>
+              <div id="three-day-forecast"></div>
+            </div>
         </section>
+
         <section class="business-spotlights" >
             <h2>Business Spotlights</h2>
             <div class="spotlight-cards"></div>
