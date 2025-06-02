@@ -226,3 +226,24 @@ footer {
 #menu.show::before{
     content:"X";
 }
+
+dialog {
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--primary-color);
+}
+
+::backdrop {
+    background-color: #52796f4f;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+}
