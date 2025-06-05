@@ -1,6 +1,6 @@
 //Get the current year and last modified date
 const currentyear = document.querySelector("#currentyear");
-const lastupdated = document.querySelector("#lastModified");
+const lastupdated = document.querySelector("#last-modified");
 const today = new Date();
 currentyear.innerHTML =`${today.getFullYear()}`;
 let lastModif = new Date(document.lastModified);
@@ -12,7 +12,7 @@ const lastModifFormatted = lastModif.toLocaleDateString('en-US', {
 }
 )
 
-lastupdated.innerHTML = `Last Modified:  ${lastModifFormatted} ${lastModif.toLocaleTimeString()}`;
+lastupdated.textContent = `Last Modified:  ${lastModifFormatted} ${lastModif.toLocaleTimeString()}`;
 
 //Set up hamburger menu
 const mainNav = document.querySelector(".mainnav");
@@ -23,10 +23,4 @@ hamburgerButton.addEventListener('click',() =>{
     hamburgerButton.classList.toggle('show');
 })
 
-const todayDate = document.querySelector("#today");
-todayDate.innerHTML = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-});
+

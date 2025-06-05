@@ -45,6 +45,18 @@ img {
     box-shadow: 8px 8px 8px  var(--nav-background-color);
 }
 
+.business-cards a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #426864;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.business-cards a:hover{
+    text-decoration: underline;
+}
+
 .business-view {
     display: flex;
     flex-direction: row;
@@ -58,4 +70,5 @@ img {
     margin: 10px;
     box-shadow: 1px 1px 1px var(--color-border);
     background-color: var(--accent3-color);
+    cursor: pointer;
 }

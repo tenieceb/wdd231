@@ -38,7 +38,7 @@
   text-decoration: underline;
 }
 
-.cta-button {
+.cta-button, .view-all {
     padding: 1rem;
     background-color: var(--color-secondary);
     box-shadow: 5px 5px 10px var(--nav-background-color);
@@ -46,7 +46,8 @@
     text-decoration: none;
     display: block;
     margin-left: 1rem;
-    margin-right: 1rem;    
+    margin-right: 1rem;
+    text-align: center;
 }
 
 /* section styling */
@@ -66,6 +67,7 @@ main section {
     background-color:  #2b4d70;
     padding: 2rem;
     border-radius: 12px;
+    column-gap: 10px;
 }
 
 .weather h3{
@@ -162,3 +164,4 @@ main section {
 .spotlight-card a:hover {
   text-decoration: underline;
 }
+

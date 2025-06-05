@@ -53,24 +53,20 @@
 
 
         <label>Business or Organization Name <input type="text" name="business-name" required autocomplete="organization" title="Your business or orginization name"></label>
-        <label>Description <input type="text-area" title="Description of your business" name="description">  </label>
+        <label>Description <textarea cols="30" rows="5"></textarea></label>
 
         <h3>Select Membership Level</h3>
         <label><input type="radio" name="membership" value="nonprofit" checked> Non-profit Membership Fee: none</label>
         <label><input type="radio" name="membership" value="bronze"> Bronze Membership Fee: $5.00</label>
         <label><input type="radio" name="membership" value="silver"> Silver Membership Fee: $10.00</label>
         <label><input type="radio" name="membership" value="gold"> Gold Membership Fee: $15.00</label>
-
         <input type="hidden" name="time-submitted" id="time-submitted">
-
-        
-
-
         <input type="submit" value="Join Asheville Chamber of Commerce">
     </form>
     <section class="membership-info">
         <h2>Membership Benefits</h2>
-        <ul>
+        <p><em>*Based on membership level</em></p>
+        <ul id="membershipbens">
             <li>Access to exclusive networking events</li>
             <li>Discounts on local business services</li>
             <li>Monthly newsletters with community updates</li>
@@ -79,11 +75,11 @@
         </ul>
         <h2>Membership Levels</h2>
         <p><em>(Click on the membership level you are interested in to learn more about it)</em></p>
-        <ul>
-            <li><strong>Non-profit Membership:</strong> Free for non-profit organizations</li>
-            <li><strong>Bronze Membership:</strong> $5.00 per year</li>
-            <li><strong>Silver Membership:</strong> $10.00 per year</li>
-            <li><strong>Gold Membership:</strong> $15.00 per year</li>
+        <ul id="membershiplevs">
+            <li><a href="#" class="membership-option nonprofit" data-level="non-profit">Non-profit Membership</a></li>
+            <li><a href="#" class="membership-option bronze" data-level="bronze">Bronze Membership</a></li>
+            <li><a href="#" class="membership-option silver" data-level="silver">Silver Membership</a></li>
+            <li><a href="#" class="membership-option gold" data-level="gold">Gold Membership</a></li>
         </ul>
     </section>
     </div> 
@@ -92,7 +88,7 @@
     <section id="contact">
         <h3> Asheville Chamber of Commerce </h3>
         <p> 123 Main St, Asheville, NC 28801 </p>
-        <p> Email: <a href="info@ashevillenc.org">info@ashevillenc.org</a></p>
+        <p> Email: <a href="fake@ashevillenc.notreal">info@ashevillenc.org</a></p>
         <p> Phone: (123) 456-7890 </p>
     </section>
     <section class="social">
@@ -106,9 +102,9 @@
         <h3>WDD231 Class Project</h3>
         <p>Teniece Busenbark</p>
         <p>© <span id="currentyear"></span> Asheville Chamber of Commerce</p>
-        <p id="lastModified"></p>
+        <p id="last-modified"></p>
     </section>
   </footer>
-    
+  <dialog id="dialog"></dialog>  
 </body>
 </html>

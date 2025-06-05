@@ -77,3 +77,12 @@ async function getAndShowWeather() {
 }
 
 getAndShowWeather();
+
+// Showing today's date 
+const todayDate = document.querySelector("#today");
+todayDate.innerHTML = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+});
