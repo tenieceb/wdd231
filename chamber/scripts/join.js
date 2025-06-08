@@ -1,3 +1,5 @@
+document.querySelector('#time-submitted').value = new Date().toLocaleString();
+
 const dialog = document.getElementById('dialog');
 
 const descriptions = {
