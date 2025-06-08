@@ -1,5 +1,6 @@
 form {
     margin: 1rem 2%;
+}
   
     label {
       display: block;
@@ -47,7 +48,7 @@ form {
       -webkit-appearance: none;
       appearance: none;
     }
-  }
+  
 
 input[type=submit]:hover {
     background-color: var(--color-secondary);
