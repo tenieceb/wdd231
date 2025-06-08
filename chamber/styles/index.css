@@ -1,4 +1,4 @@
-/* hero image */
+
 .hero-call-to-action {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,6 @@
     text-align: center;
 }
 
-/* section styling */
 main section {
     padding: 2rem;
     background-color: var(--color-background);
@@ -58,7 +57,6 @@ main section {
     border-radius: 12px;
 }
 
-/* weather */
 .weather {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -104,7 +102,6 @@ main section {
   margin-top: 1rem;
 }
 
-/* === SPOTLIGHT CONTAINER === */
 .spotlight-cards {
   display: flex;
   flex-direction: column;
@@ -114,7 +111,6 @@ main section {
   background-color: var(--nav-background-color);
 }
 
-/* === INDIVIDUAL SPOTLIGHT CARD === */
 .spotlight-card {
   background-color: white;
   border-radius: 10px;

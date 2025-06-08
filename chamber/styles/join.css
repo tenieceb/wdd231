@@ -71,7 +71,6 @@ em {
   font-size: 13px;
 }
 
-/* Membership info and animation styling */
 
 @keyframes fadeInListItem {
   from {
@@ -89,7 +88,6 @@ em {
   animation: fadeInListItem 0.6s ease-out forwards;
 }
 
-/* Stagger the list item fade-in */
 #membershipbens li:nth-child(1) { animation-delay: 0.2s; }
 #membershipbens li:nth-child(2) { animation-delay: 0.8s; }
 #membershipbens li:nth-child(3) { animation-delay: 1.4s; }
@@ -128,7 +126,6 @@ em {
 }
 
 
-/* Membership level buttons */
 
 .membership-option {
   display: block;
@@ -204,7 +201,6 @@ em {
 
 
 
-/* Modal */
 
 dialog {
   border: none;
