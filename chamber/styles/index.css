@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.hero-call-to-action h2 {
+  color:#d6d6d6;
+}
+
 .hero img{
     margin:0;
     max-width: 100%;
@@ -20,8 +24,8 @@
     margin: 0;
 }
 
-.hero-call-to-action figcaption{
-    color: var(--color-text);
+.hero-call-to-action figcaption, .hero-call-to-action figcaption a{
+    color:#d6d6d6;
     text-align: center;
     margin-top: 1rem;
 }

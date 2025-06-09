@@ -136,9 +136,14 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    color:var(--color-text);
     padding:5px;
 }
+
+footer p, footer a, footer h3{
+    color:white;
+
+}
+
 .social ul{
     display: flex;
     flex-direction: row;

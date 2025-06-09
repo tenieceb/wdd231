@@ -157,11 +157,11 @@ em {
 }
 
 .membership-option.bronze {
-  background: linear-gradient(135deg, #b87333, #7f4a18);
-  color: #fff5e1;
+  background: linear-gradient(135deg, #ee9643, #7f4a18);
+  color: #222;
   border: 2px solid #a05f2f;
-  text-shadow: 0 1px 2px #5c3200;
-  box-shadow: 0 4px 8px rgba(184, 115, 51, 0.5);
+  text-shadow: 0 1px 1px #f0f0f0;
+-8  box-shadow: 0 4px 8px rgba(184, 115, 51, 0.5);
 }
 .membership-option.bronze:hover {
   background: linear-gradient(135deg, #d78c45, #9f6122);
