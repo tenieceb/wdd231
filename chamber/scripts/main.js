@@ -14,13 +14,11 @@ const lastModifFormatted = lastModif.toLocaleDateString('en-US', {
 
 lastupdated.textContent = `Last Modified:  ${lastModifFormatted} ${lastModif.toLocaleTimeString()}`;
 
-//Set up hamburger menu
-const mainNav = document.querySelector(".mainnav");
+const mainNav = document.getElementById("mainnav");
 const hamburgerButton = document.getElementById("menu");
 
-hamburgerButton.addEventListener('click',() =>{
-    mainNav.classList.toggle('show');
-    hamburgerButton.classList.toggle('show');
-})
-
-
+hamburgerButton.addEventListener('click', () => {
+  const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
+  hamburgerButton.setAttribute('aria-expanded', String(!isExpanded));
+  mainNav.classList.toggle('show');
+});

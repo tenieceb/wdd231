@@ -69,9 +69,10 @@ header {
     font-weight: bold;
     padding: 5px;
     background-color: transparent;
-    color:var(--color-background);
+    color: var(--color-background);
     text-decoration: none;
-
+    border: none;
+    cursor: pointer;
 }
 
 #menu::before {
