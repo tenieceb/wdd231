@@ -43,4 +43,3 @@ if (!lastVisit) {
 sidebar.textContent = message;
 document.body.prepend(sidebar);
 localStorage.setItem("lastVisit", now);
-
