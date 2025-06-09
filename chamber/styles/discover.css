@@ -1,0 +1,23 @@
+.card-grid {
+  display: grid;
+  grid-template-areas: 
+    "card1"
+    "card2"
+    "card3";
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 0 5px #ccc;
+}
+
+@media (min-width: 641px) {
+  .card img:hover {
+    filter: brightness(85%);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}
+/* Use media queries to rearrange cards into 2 columns or more */

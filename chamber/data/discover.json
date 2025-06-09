@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Biltmore Estate",
+    "image": "images/biltmore.webp",
+    "address": "1 Lodge St, Asheville, NC 28803",
+    "description": "America’s largest home with gardens, winery, and historic tours."
+  },
+  {
+    "title": "Blue Ridge Parkway",
+    "image": "images/blue-ridge-parkway.webp",
+    "address": "Along Blue Ridge Pkwy near Asheville, NC",
+    "description": "Scenic drive through the Southern Appalachians with hiking & overlooks."
+  },
+  {
+    "title": "River Arts District",
+    "image": "images/river-arts.webp",
+    "address": "River Arts District, Asheville, NC 28801",
+    "description": "Converted studio spaces and galleries along the French Broad River."
+  },
+  {
+    "title": "Asheville Art Museum",
+    "image": "images/asheville-art-museum.webp",
+    "address": "2 S Pack Square, Asheville, NC 28801",
+    "description": "Contemporary & regional art collection in downtown Asheville." 
+  },
+  {
+    "title": "Basilica of St. Lawrence",
+    "image": "images/basilica.webp",
+    "address": "97 Haywood St, Asheville, NC 28801",
+    "description": "Historic basilica with the largest freestanding dome in North America."
+  },
+  {
+    "title": "Botanical Gardens at Asheville",
+    "image": "images/botanical-gardens.webp",
+    "address": "151 W T Weaver Blvd, Asheville, NC 28804",
+    "description": "Ten-acre garden dedicated to native Appalachian plants." 
+  },
+  {
+    "title": "Omni Grove Park Inn",
+    "image": "images/omni-grove-park.webp",
+    "address": "290 Macon Ave, Asheville, NC 28804",
+    "description": "Historic resort and spa with mountain views, golf, and craftsman architecture." 
+  },
+  {
+    "title": "Downtown Asheville",
+    "image": "images/downtown-asheville.webp",
+    "address": "Downtown Asheville, NC",
+    "description": "Eclectic shops, street performers, breweries, and vibrant cultural scene."
+  }
+]
