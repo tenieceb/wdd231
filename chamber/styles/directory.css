@@ -3,7 +3,7 @@
 .business-cards, #grid{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 4rem;    
+    gap: 4rem;    
     justify-items: center;
 }
 
@@ -54,7 +54,7 @@ img {
 }
 
 .business-cards a:hover{
-    text-decoration: underliness;
+    text-decoration: underline;
 }
 
 .business-view {
