@@ -154,5 +154,6 @@ footer p, footer a, footer h3{
 
 .social img, .business-view img{
     width: 25px;
+    height: 25px;
     box-shadow: none;
 }
