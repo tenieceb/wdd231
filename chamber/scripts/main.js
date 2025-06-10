@@ -21,4 +21,5 @@ hamburgerButton.addEventListener('click', () => {
   const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
   hamburgerButton.setAttribute('aria-expanded', String(!isExpanded));
   mainNav.classList.toggle('show');
+  hamburgerButton.classList.toggle('show');
 });

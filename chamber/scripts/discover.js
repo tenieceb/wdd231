@@ -23,7 +23,7 @@ fetch("data/discover.json")
   });
 
 
-const sidebar = document.createElement("div");
+const sidebar = document.getElementById("visittrack");
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
 
@@ -41,5 +41,4 @@ if (!lastVisit) {
 }
 
 sidebar.textContent = message;
-document.body.prepend(sidebar);
 localStorage.setItem("lastVisit", now);

@@ -1,22 +1,88 @@
 .card-grid {
   display: grid;
-  grid-template-areas: 
-    "card1"
-    "card2"
-    "card3";
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
+  min-width: 0;
 }
 
 .card {
+  display: grid;
+  grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location";
   background: white;
   padding: 1rem;
   box-shadow: 0 0 5px #ccc;
+  min-width: 0;
+}
+
+.card h2 {
+  grid-area: name;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.card figure {
+  grid-area: photograph;
+  margin: 0;
+}
+
+.card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card p {
+  grid-area: description;
+  margin: 0.5rem 0;
+}
+
+.card address {
+  grid-area: location;
+  font-style: normal;
+  margin: 0.5rem 0 0 0;
+}
+
+#visittrack {
+  text-align: center;
+  background-color: #3a6ea546;
+  padding: 5px 0;
+  margin: 5px 0;
 }
 
 @media (min-width: 641px) {
-  .card img:hover {
-    filter: brightness(85%);
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "name name"
+      "photograph description"
+      "photograph location";
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .card h2 {
+    text-align: left;
+  }
+
+  .card figure {
+    height: 100%;
+  }
+
+  .card figure img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card p,
+  .card address {
+    margin: 0;
   }
 }
+
