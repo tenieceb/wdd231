@@ -1,0 +1,27 @@
+[
+  {
+    "id": "dinosaur",
+    "title": "Giant Amigurumi Dinosaur",
+    "story": "This giant amigurumi dinosaur was a labor of love! The original pattern is only about a foot tall. Through a lot of math and experimenting, my husband and I were able to scale up the pattern to be 3x as large. It was commissioned by a friend for her 3 year old grandson, and no one could believe how huge it turned out. The cutie in the image is my 3 year old standing next to it for size comparison.",
+    "image": "images/dinosaur.webp",
+    "alt": "A giant amigurumi dinosaur standing by 3 year old for size comparison",
+    "url":"https://stringydingding.com/brontosaurus-dinosaur-amigurumi-free-crochet-pattern/"
+
+  },
+  {
+    "id": "maggie",
+    "title": "Amigurumi Memorial Dog - Maggie",
+    "story": "This project was very special to create. My cousin contacted me and asked if I could create a memorial amigurumi of their dog, Maggie, who passed away. She sent me images and I embarked on a journey to make it happen. Using the amazing book, Edward's Menagerie by Kerry Lord, I was able to create a beautiful amigurumi that captured Maggie's likeness. I was able to complete it just in time for Christmas. My cousin sent me the sweetest video of her young daughter opening it. I watched with anticipation, worried that it wouldn't be what they hoped for. When she saw it she immediate hugged it and said,'Mags! You came back!' I was so relieved and grateful that I could bring a little bit of comfort to them in their time of loss.",
+    "image": "images/maggie.webp",
+    "alt": "An amigurumi memorial dog named Maggie",
+    "url":"https://www.toftuk.com/PD.aspx?product=Books/Books_by_Kerry_Lord/-Dogs_Edwards_Menagerie_Book_by_Kerry_Lord"
+  },
+  {
+    "id": "octopus",
+    "title": "Giant Amigurumi Octopuses",
+    "story": "These three squishy octopuses were very entertaining to make! They are huge, squishy, and soft. I made them for three special little kiddos in my life. The hardest part was procuring the correct yarn and having enough filling to make them all.",
+    "image": "images/octopus.webp",
+    "alt": "Three giant amigurumi octopuses",
+    "url":"https://lefthandedcrocheter.com/2016/08/24/giant-squishy-octopus/"
+  }
+]

@@ -13,3 +13,13 @@ const lastModifFormatted = lastModif.toLocaleDateString('en-US', {
 )
 
 lastupdated.innerHTML = `Last Modified:  ${lastModifFormatted} ${lastModif.toLocaleTimeString()}`;
+
+const mainNav = document.getElementById("mainnav");
+const hamburgerButton = document.getElementById("menu");
+
+hamburgerButton.addEventListener('click', () => {
+  const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
+  hamburgerButton.setAttribute('aria-expanded', String(!isExpanded));
+  mainNav.classList.toggle('show');
+  hamburgerButton.classList.toggle('show');
+});
