@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const products = await fetchProducts();
 
-    productSelect.innerHTML = `
-    `;
+    productSelect.innerHTML = '<option value="" disabled selected>Select an item</option>';
 
     products.forEach(product => {
       const option = document.createElement("option");

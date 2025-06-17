@@ -1,6 +1,6 @@
 //Get the current year and last modified date
 const currentyear = document.querySelector("#currentyear");
-const lastupdated = document.querySelector("#lastModified");
+const lastupdated = document.querySelector("#last-modified");
 const today = new Date();
 currentyear.innerHTML =`${today.getFullYear()}`;
 let lastModif = new Date(document.lastModified);
