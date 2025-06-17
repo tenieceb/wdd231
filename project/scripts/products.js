@@ -9,12 +9,22 @@ export async function fetchProducts() {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     allProducts = await response.json();
-    displayProducts(allProducts);
+
+  
+    if (document.getElementById('products')) {
+      displayProducts(allProducts);
+    }
+
+    return allProducts;
   } catch (error) {
     console.error('Failed to fetch products:', error);
-    productsContainer.innerHTML = `<p>Sorry, we couldn't load the products at this time.</p>`;
+    if (document.getElementById('products')) {
+      productsContainer.innerHTML = `<p>Sorry, we couldn't load the products at this time.</p>`;
+    }
+    return []; 
   }
 }
+
 
 
 function displayProducts(products) {

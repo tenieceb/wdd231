@@ -1,15 +1,19 @@
 import { fetchProducts } from './products.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const productSelect = document.getElementById('product-select');
-  const productPreview = document.getElementById('product-preview');
+  const productSelect = document.getElementById('product');
+  const productPreviewImg = document.getElementById('preview-img');
+  const productPreviewDesc = document.getElementById('preview-desc');
 
   try {
     const products = await fetchProducts();
 
+    productSelect.innerHTML = `
+    `;
+
     products.forEach(product => {
       const option = document.createElement("option");
-      option.value = product.id;
+      option.value = product.name;
       option.textContent = product.name;
       option.dataset.image = product.image;
       option.dataset.description = product.description;
@@ -18,17 +22,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     productSelect.addEventListener("change", () => {
       const selected = productSelect.options[productSelect.selectedIndex];
-      const imageSrc = selected.dataset.image;
-      const description = selected.dataset.description;
 
-      productPreview.innerHTML = `
-        <img src="${imageSrc}" alt="${selected.textContent}" loading="lazy">
-        <p>${description}</p>
-      `;
+      if (selected.dataset.image) {
+        productPreviewImg.src = selected.dataset.image;
+        productPreviewImg.alt = selected.textContent;
+        productPreviewDesc.textContent = selected.dataset.description;
+      } else {
+        productPreviewImg.src = 'images/placeholder.webp';
+        productPreviewImg.alt = 'Selected item preview';
+        productPreviewDesc.textContent = 'Select a product to see a preview.';
+      }
     });
-
   } catch (error) {
-    productPreview.innerHTML = `<p>Unable to load products.</p>`;
-    console.error(error);
+    console.error('Unable to load products for order page:', error);
+    productPreviewDesc.textContent = 'Unable to load product previews at this time.';
   }
 });
