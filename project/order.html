@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-large.css">
     <script src="scripts/main.js" defer ></script>
+    <script src="scripts/order.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
@@ -36,6 +37,56 @@
         </ul>
     </nav>  
     </header>
+    <main>
+  <h2>Place a Custom Order</h2>
+  <form action="thankyou.html" method="get" id="order-form">
+    <fieldset>
+      <legend>Select a Product</legend>
+      <label for="product">Choose a product:</label>
+      <select name="product" id="product" required>
+        <option value="" disabled selected>Select an item</option>
+        <option value="Cozy Amigurumi Bear">Cozy Amigurumi Bear</option>
+        <option value="Crochet Flower Coasters">Crochet Flower Coasters</option>
+        <option value="Handmade Crochet Bag">Handmade Crochet Bag</option>
+        <option value="Cute Crochet Cat">Cute Crochet Cat</option>
+        <option value="Colorful Crochet Blanket">Colorful Crochet Blanket</option>
+        <option value="Amigurumi Bunny">Amigurumi Bunny</option>
+        <option value="Crochet Bookmark">Crochet Bookmark</option>
+        <option value="Crochet Headband">Crochet Headband</option>
+        <option value="Mini Crochet Pumpkin">Mini Crochet Pumpkin</option>
+        <option value="Crochet Mug Cozy">Crochet Mug Cozy</option>
+        <option value="Crochet Plant Pot Cover">Crochet Plant Pot Cover</option>
+        <option value="Crochet Earrings">Crochet Earrings</option>
+        <option value="Crochet Phone Case">Crochet Phone Case</option>
+        <option value="Crochet Doll Clothes">Crochet Doll Clothes</option>
+        <option value="Crochet Coffee Cup Sleeve">Crochet Coffee Cup Sleeve</option>
+      </select>
+
+      <div id="product-preview">
+        <img id="preview-img" src="images/placeholder.webp" alt="Selected item preview" width="200">
+        <p id="preview-desc">Select a product to see a preview.</p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Your Info</legend>
+      <label for="name">Full Name: <input type="text" name="name" id="name" required></label>
+      <label for="email">Email: <input type="email" name="email" id="email" required></label>
+      <label for="phone">Phone Number: <input type="tel" name="phone" id="phone" required></label>
+    </fieldset>
+    <fieldset>
+      <legend>When Do You Need It?</legend>
+      <label for="needed-by">Date Needed By: <input type="date" name="needed-by" id="needed-by"></label>
+      <label><input type="checkbox" name="no-hurry" id="no-hurry"> No Hurry</label>
+    </fieldset>
+    <fieldset>
+      <legend>Optional Customizations</legend>
+      <label for="custom">Let me know any preferences:</label>
+      <textarea name="custom" id="custom" rows="4" placeholder="Colors, sizes, etc."></textarea>
+    </fieldset>
+    <button type="submit">Submit Order</button>
+  </form>
+</main>
+
     <footer>
     <section id="contact">
         <h3>Teniece Busenbark</h3>

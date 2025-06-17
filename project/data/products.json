@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Amigurumi Bear",
+    "description": "A soft and cuddly handmade crochet bear.",
+    "image": "images/bear.webp",
+    "price": "$25",
+    "type": "toy"
+  },
+  {
+    "id": 2,
+    "name": "Crochet Flower Coasters",
+    "description": "Set of 4 colorful flower-shaped coasters.",
+    "image": "images/coasters.webp",
+    "price": "$15, depending on amount",
+    "type": "home-decor"
+  },
+  {
+    "id": 3,
+    "name": "Handmade Crochet Bag",
+    "description": "Stylish and eco-friendly crochet tote bag.",
+    "image": "images/bag.webp",
+    "price": "$40",
+    "type": "accessory"
+  },
+  {
+    "id": 4,
+    "name": "Cute Crochet Cat",
+    "description": "Small cat figurine perfect as a gift or decor.",
+    "image": "images/cat.webp",
+    "price": "$30",
+    "type": "toy"
+  },
+  {
+    "id": 5,
+    "name": "Colorful Crochet Blanket",
+    "description": "Warm and vibrant blanket made with love.",
+    "image": "images/blanket.webp",
+    "price": "$85",
+    "type": "home-decor"
+  },
+  {
+    "id": 6,
+    "name": "Amigurumi Bunny",
+    "description": "Adorable bunny doll with floppy ears.",
+    "image": "images/bunny.webp",
+    "price": "$28",
+    "type": "toy"
+  },
+  {
+    "id": 7,
+    "name": "Crochet Bookmark",
+    "description": "Handmade bookmark with floral design.",
+    "image": "images/bookmark.webp",
+    "price": "$10",
+    "type": "accessory"
+  },
+  {
+    "id": 8,
+    "name": "Crochet Headband",
+    "description": "Soft cotton headband in pastel colors.",
+    "image": "images/headband.webp",
+    "price": "$12",
+    "type": "accessory"
+  },
+  {
+    "id": 9,
+    "name": "Mini Crochet Pumpkin",
+    "description": "Cute autumn decoration for your home.",
+    "image": "images/minipumpkin.webp",
+    "price": "$18",
+    "type": "home-decor"
+  },
+  {
+    "id": 10,
+    "name": "Crochet Mug Cozy",
+    "description": "Keeps your drinks warm and hands comfy.",
+    "image": "images/mugcozy.webp",
+    "price": "$14",
+    "type": "accessory"
+  },
+  {
+    "id": 11,
+    "name": "Crochet Plant Pot Cover",
+    "description": "Brighten your plants with handmade covers.",
+    "image": "images/potcover.webp",
+    "price": "$20",
+    "type": "home-decor"
+  },
+  {
+    "id": 12,
+    "name": "Crochet Earrings",
+    "description": "Lightweight, unique fashion accessory.",
+    "image": "images/earrings.webp",
+    "price": "$22",
+    "type": "accessory"
+  },
+  {
+    "id": 13,
+    "name": "Crochet Phone Case",
+    "description": "Protect your phone with handmade charm.",
+    "image": "images/phonecase.webp",
+    "price": "$25",
+    "type": "accessory"
+  },
+  {
+    "id": 14,
+    "name": "Crochet Doll Clothes",
+    "description": "Cute clothes for your favorite dolls.",
+    "image": "images/dollclothes.webp",
+    "price": "$35",
+    "type": "accessory"
+  },
+  {
+    "id": 15,
+    "name": "Crochet Coffee Cup Sleeve",
+    "description": "Reusable sleeve to keep your hands safe.",
+    "image": "images/coffeecozy.webp",
+    "price": "$13",
+    "type": "accessory"
+  }
+]
