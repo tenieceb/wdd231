@@ -3,26 +3,31 @@
     font-size: 1.1rem;
     line-height: 1.6;
     padding: 0 2rem;
+    font-display: swap;
   }
 
   main {
-  min-height: 40vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+    min-height: 40vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
+  main h1,
+  main h2,
+  main h3 {
+    min-height: 2.5rem;
+    line-height: 1.2;
+  }
 
   header,
   footer {
     padding: 2rem 4rem;
     text-align: center;
   }
-
-
 
   nav {
     display: flex;
@@ -41,6 +46,7 @@
   nav a:focus {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
+    outline: none;
   }
 
   .hero {
@@ -66,17 +72,38 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     padding: 1rem;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
 
-  .product-card:hover {
+  .product-card:hover,
+  .product-card:focus-within {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  .product-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    min-height: 2rem; 
+  }
+
+  .product-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.4;
   }
 
   .product-card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
     border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 0.75rem;
   }
 
   .price {
@@ -101,13 +128,19 @@
     color: white;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #filters button:hover,
+  #filters button:focus {
+    background-color: var(--color-primary-dark);
+    outline: none;
   }
 
   #filters button.active {
     background-color: var(--color-primary);
   }
 
-  /* Hamburger hidden on large screens */
   #menu {
     display: none;
   }
