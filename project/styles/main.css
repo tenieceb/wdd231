@@ -6,7 +6,13 @@
   --header-footer-bg: #d9ead3;
   --font-body: 'Roboto', sans-serif;
   --font-heading: 'Dancing Script', cursive;
+
+  --color-border: #525a44; 
+  --color-primary-dark: #7a8a6a;
+  --nav-hover-background-color: #c0d5b0; 
+  --nav-hover-link-color: #1a1a1a; 
 }
+
 
 * {
   box-sizing: border-box;
@@ -26,12 +32,13 @@ body {
 
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--header-footer-bg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--header-footer-bg);
+  border: 1px solid var(--color-border);
 }
 
 #heading {
@@ -59,7 +66,6 @@ header {
     font-weight: bold;
     padding: 5px;
     background-color: transparent;
-    color: var(--color-background);
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -90,7 +96,6 @@ header {
 .mainnav ul li a{
     display: flex;
     flex-direction: column;
-    color: var(--color-background);
     text-decoration:none;
     padding: 1rem;
     text-align: center; 
@@ -101,8 +106,7 @@ ul {
 }
 
 nav a:link, nav a:visited {
-    color: var(--color-secondary);
-    
+    color: var(--text-color);
 }
 
 nav a:hover {
@@ -125,8 +129,6 @@ main {
     gap: 1rem;
     justify-content: center;
 }
-
-
 
 .about-hero {
   position: relative;
@@ -173,6 +175,7 @@ main {
   color: var(--primary-color);
   text-decoration: underline;
 }
+
 #fav-project {
   font-family: var(--font-body);
   background-color: var(--accent-color);
@@ -311,7 +314,7 @@ footer p, footer a, footer h3{
 .thankyou-summary {
   padding: 1rem;
   background-color: #fefefe;
-  border: 2px dashed var(--color-primary, #3a6ea5);
+  border: 2px dashed var(--primary-color, #3a6ea5);
   border-radius: 1rem;
   max-width: 600px;
   margin: 1rem auto;
