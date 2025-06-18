@@ -33,9 +33,10 @@ function displayProducts(products) {
   products.forEach(product => {
     const card = document.createElement('article');
     card.classList.add('product-card');
+    const loadingAttr = index === 0 ? '' : 'loading="lazy"';
 
     card.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" loading="lazy" width="400" height="400">
+      <img src="${product.image}" alt="${product.name}" ${loadingAttr} width="400" height="400">
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <p class="price">${product.price}</p>
