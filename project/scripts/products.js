@@ -30,7 +30,7 @@ export async function fetchProducts() {
 function displayProducts(products) {
   productsContainer.innerHTML = ''; 
 
-  products.forEach(product => {
+  products.forEach((product, index) => {
     const card = document.createElement('article');
     card.classList.add('product-card');
     const loadingAttr = index === 0 ? '' : 'loading="lazy"';
