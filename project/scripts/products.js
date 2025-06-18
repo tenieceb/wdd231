@@ -26,13 +26,13 @@ export async function fetchProducts() {
 }
 
 
-
 function displayProducts(products) {
-  productsContainer.innerHTML = ''; 
+  productsContainer.innerHTML = '';
 
   products.forEach((product, index) => {
     const card = document.createElement('article');
     card.classList.add('product-card');
+
     const loadingAttr = index === 0 ? '' : 'loading="lazy"';
 
     card.innerHTML = `
