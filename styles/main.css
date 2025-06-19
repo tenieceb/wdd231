@@ -1,249 +1,288 @@
+/* =====================
+   Crochet Me Knot Buzey - main.css (Mobile-First)
+   ===================== */
+
 :root {
-    --primary-color: #2F3E46;
-    --secondary-color: #52796F;
-    --accent1-color: #CAD2C5;
-    --accent2-color: #354F52;
-    --accent3-color:  #84A98C;
-    --accent4-color: #84a98c6a;
-    --main-font: "Lexend Deca";
+  --primary-color: #a3b18a;
+  --secondary-color: #f2c6c2;
+  --accent-color: #fff5e1;
+  --text-color: #252424;
+  --header-footer-bg: #d9ead3;
+  --font-body: 'Roboto', sans-serif;
+  --font-heading: 'Dancing Script', cursive;
 
-    --nav-link-color: white;
-    --nav-hover-link-color:#354F52;
-    --nav-hover-background-color: rgba(255, 255, 255, 0.597);
+  --color-border: #525a44;
+  --color-primary-dark: #7a8a6a;
+  --nav-hover-background-color: #c0d5b0;
+  --nav-hover-link-color: #1a1a1a;
 }
 
-body{
-    margin: 0 auto;
-    padding: 0;
-    background-color: var(--accent1-color);
+/* =====================
+   Base Reset & Typography
+   ===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2{
-    font-family: var(--main-font);
-    color:var(--primary-color);
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: 1.6;
+  padding: 0 1rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary-dark);
+  margin: 0.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* =====================
+   Header
+   ===================== */
 
 header {
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100% ;
-    padding: 5px;
-    background-color: var(--accent2-color);
-    border-bottom: 4px solid var(--primary-color);
+  background-color: var(--header-footer-bg);
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
 }
 
-
-
-#profile {
-    justify-self: center;
-    box-shadow: 5px 5px 5px black;
-    margin: 7px;
-    width: 100px;
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
 }
 
-
-#name {
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 2rem;
-    color: white;
-    text-align: center;
-    text-shadow: #2F3E46 2px 2px 2px;
+#heading img {
+  width: 80px;
+  height: 80px;
 }
 
-
-h1,h2, p {
-    text-align: center;
+#menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
-h2 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    background-color: var(--accent4-color);
-    width: 100%;
-    padding: 1rem 0 1rem 0;
-    margin: 0;
+#menu::before {
+  content: "\2630"; /* Unicode for hamburger icon */
 }
 
-.mainnav a{
-    display: none;
-    flex-direction: column;
-    color: var(--nav-link-color);
-    text-decoration:none;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
+.mainnav {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
-.mainnav ul{
-	list-style-type: none;
+.mainnav.show {
+  display: flex;
 }
 
-.mainnav a:hover, a:hover{
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+.mainnav ul li {
+  margin-bottom: 0.5rem;
 }
+
+.mainnav a {
+  font-weight: bold;
+  background-color: var(--nav-hover-background-color);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: block;
+  text-align: center;
+}
+
+/* =====================
+   Main Sections
+   ===================== */
 
 main {
-    margin: 0 1rem;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.main-boxes{
-    border: 1.5px solid var(--primary-color);
-    border-radius: 5px;
-    box-shadow: 0 2px 8px var(--primary-color);
-    width: 100%;
-    margin: 1rem auto;
-    background-color: #8e5f3038;
-}
-
-
-#high-uintas {
-  max-width: 900px;
-  margin: 0 auto;
+.main-boxes {
+  background-color: var(--accent-color);
   padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-#ub {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px var(--primary-color); 
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-#caption{
-    font-size: 1rem;
-    color: var(--primary-color);
-    text-align: center;
-    margin-top: 1rem;
+.projects ul li img {
+  cursor: pointer;
 }
 
-#caption a{
-    color: var(--primary-color);
+#spotlight {
+  text-align: center;
 }
 
-#certificate{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}
-
-#courses-container {
-    display:flex;
-    flex-direction:column;
-    row-gap: 10px;
-    
-}
-
-#courses-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    column-gap: 10px;
-    list-style-type: none;
-    padding: 1rem;
-    margin: 2rem 0;
-}
-
-
-
-#courses-nav a{
-    text-decoration: none;
-    font-size: 1.75rem;
-    color: var(--nav-link-color);
-    background-color: var(--accent2-color);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px var(--primary-color);
-}
-
-#courses-nav a.active {
-    background-color: var(--nav-link-color);
-    color: var(--accent2-color);
-    font-weight: bold;
-}
-
-
-.course-card {
-  border: 1px solid #ccc;
+.spotlight-card {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
   padding: 1rem;
-  margin-bottom: 1rem;
-  border-color: var(--primary-color);
-  border-radius: 6px;
-  box-shadow: 0 2px 8px var(--primary-color);
-  background-color: var(--accent1-color);
-
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.completed {
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 8px var(--primary-color);
-    color:white;
+/* =====================
+   Form Styles
+   ===================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  border-radius: 1rem;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  font-family: var(--font-body);
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+#product-preview {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* =====================
+   Footer
+   ===================== */
 
 footer {
-    width: 100%;
-    background-color: var(--accent2-color);
-    text-align: center;
-    font-family: var(--main-font);
-    color:var(--accent1-color);
-    padding: 5px;
-     border-top: 4px solid var(--primary-color);
+  background-color: var(--header-footer-bg);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 2px solid var(--primary-color);
+  margin-top: 3rem;
 }
 
-/* Hamburger button */
-#menu{
-    align-self: center;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight:bold;
-    padding: 5px;
-    background-color: var(--nav-background-color);
-    color: var(--nav-link-color);
+footer section {
+  margin-bottom: 1.5rem;
 }
 
-#menu::before{
-    content:"≡";
+.social ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.show a{
-    display:flex;
-    align-items: flex-end;
-    width: 100%;;
-}
+/* =====================
+   Media Queries (Tablet & Up)
+   ===================== */
 
-#menu.show::before{
-    content:"X";
-}
+@media (min-width: 700px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-dialog {
-    width: 90%;
+  #heading {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .mainnav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .projects ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .spotlight-card {
     max-width: 500px;
-    padding: 1rem;
-    background-color: var(--accent1-color);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px var(--primary-color);
-}
-
-::backdrop {
-    background-color: #52796f4f;
-}
-
-dialog button {
-    position: absolute;
-    top: 23px;
-    right: 23px;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-color);
+    margin: 1rem auto;
+  }
 }
