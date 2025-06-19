@@ -76,6 +76,11 @@ header {
   text-align: center;
 }
 
+#heading img {
+  width: 80px;
+  height: 80px;
+}
+
 #menu {
   background: none;
   border: none;
@@ -332,16 +337,26 @@ footer {
   text-align: center;
   border-top: 2px solid var(--primary-color);
   margin-top: 3rem;
+  min-height: 200px;
 }
+
 
 footer section {
   margin-bottom: 1.5rem;
+  min-height: 3rem; 
 }
 
 .social ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.social ul img {
+  width: 25px;
+  height: 25px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 /* -------- Media Queries (Tablet & Up) -------- */
